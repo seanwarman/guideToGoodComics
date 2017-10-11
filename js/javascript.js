@@ -5,7 +5,7 @@ $("document").ready(function()	{
   hideMenu = function() {
     if (windowLoadSize < 760) {
       $(".holder").hide();
-      $(".holder").css({"top": "13%"});
+      $(".holder").css({"top": "80"});
     } else {
       $(".holder").show();
 
@@ -33,6 +33,9 @@ $("document").ready(function()	{
     hideMenu();
     addRemoveButton();
     $(".article").removeClass("moveForMenu");
+    if (windowLoadSize < 761) {
+      $(".holder").css({"top": "80"});
+    }
      
     
   })
