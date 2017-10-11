@@ -183,13 +183,13 @@ a 	{
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
-  /*position: relative;*/
+  position: relative;
   top: 1px;
   display: inline-block;
   font-family: 'Glyphicons Halflings' !important;
   font-style: normal;
   font-weight: normal;
-  line-height: 5px;
+  line-height: 20px;
   background-color: #0099ff;
   color: white;
   font-size: 20px;
