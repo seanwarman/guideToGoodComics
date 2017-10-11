@@ -1,0 +1,361 @@
+/*this is making the .comicslist div reach the edges of the window, i think firefox has formatting to make sure nothing touches the edge of the screen
+putting the padding and margin to zero overirdes that.*/
+html body	{
+	padding: 0;
+	margin: 0;
+	/*height: 100%;*/
+	/*margin-top: 20px;*/
+	/*height: 300px;*/
+}
+
+.home	{
+	/*background-color: #9adbc9;*/
+}
+
+
+/*FONTS...
+font-family: 'Amatic SC', cursive; <----big title
+font-family: 'Gloria Hallelujah', cursive; <------menu
+*/
+.titleBar	{
+	background-color: #0099ff;
+	height: 80px;
+	line-height: 72px;
+	/*width: 18.8%;*/
+	width: 100%;
+	/*padding-left: 16px;*/
+	/*position: fixed;*/
+	box-shadow: 0px 0px 10px #b0b0b0;
+	/*border-bottom: 1px #eeeeee solid;*/
+	/*margin-top: 0;*/
+	/*text-align: right;*/
+	z-index: 1;
+	position: relative;
+
+
+
+}
+
+.title, .blurb	{
+	/*text-align: center;*/
+	font-family: 'Amatic SC', cursive;
+	font-size: 70px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	display: inline;
+	max-width: 100%;
+	padding-left: 16px;
+	
+
+}
+.blurb	{
+	font-size: 20px;
+	margin-left: 30px;
+}
+.articleContents 	{
+	width: 50%;
+	padding-left: 37%;
+	position: relative;
+
+}
+
+.article	{
+	width: 91%;
+	margin-top: -50px;
+	/*padding-left: 30%;*/
+	padding: 4%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 30px;
+	/*background-color: pink;*/
+	/*height: 636px;*/
+	position: absolute;
+	height: 80%;
+	right: auto;
+
+
+
+}
+
+.moveForMenu	{
+	left: 50%;
+}
+/*.slideMenu	{
+	left: .3%;
+}*/
+
+/*------------------------LEFT MENU--------------------------*/
+
+
+
+.holder	{
+	
+	margin-top: 0px;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+
+
+}
+
+.genre	{
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 10px;
+	/*background-color: pink;*/
+	/*margin: 0;*/
+
+}
+
+ul	{
+	font-family: 'Gloria Hallelujah', cursive;
+	/*margin-top: 0;
+	margin-bottom: 0;*/
+	position: absolute;
+	float: left;
+	background-color: #ececec;
+	width: 20%;
+	overflow-y: auto;
+	list-style-type: none;
+	line-height: 40px;
+	/*height: 100%;*/
+	height: 90%;
+	margin: 0;
+	padding: 0;
+	/*padding-bottom: 70px;*/
+	
+
+
+}
+
+li 	{
+	padding-left: 10px;
+	width: 96%;
+	/*height: 100%;*/
+	/*transition: .2s;*/
+
+
+}
+.selected	{
+	background-color: #0099ff;
+	color: white;
+}
+
+li:hover	{background-color: #0099ff; color: white;}
+
+.alert	{
+	color: #d31e1e;
+}
+.new	{
+	color: #fbff12;
+
+
+}
+
+a 	{
+	text-decoration: none;
+	color: black;
+}
+
+.menuButton	{
+	border: 1px solid white;
+	border-radius: 4px;
+	height: 40px;
+	/*padding-top: 20px;*/
+	float:left;
+	margin-top: 17px;
+	background-color: #0099ff;
+	margin-left: 17px;
+
+}
+
+.menuButton:hover	{
+	cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings' !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  background-color: #0099ff;
+  color: white;
+  font-size: 20px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon:before {
+  content: "\e055";
+}
+
+
+/*------------------------LEFT MENU END--------------------------*/
+
+
+
+
+
+/*-------------------------PICTURES------------------------*/
+.noteTxt	{
+	color: grey;
+	font-size: 13px;
+}
+
+.picSettingsLeft  {
+  float: left;
+  margin-right: 10px;
+ 
+}
+.picSettingsRight {
+  float: right;
+  margin-left: 10px;
+}
+.picSizeSm  {
+  width: 30%;
+}
+.picSizeMd  {
+  width: 40%;
+}
+.picSizeLg	{
+	width: 50%;
+}
+
+.headPic  {
+  width: 100%;
+  height: 390px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.homeHead {
+  background: url(http://i.imgur.com/dZ2S3VR.jpg) 50% 50% no-repeat;
+  background-size: 100%;
+}
+.spidermanHead  {
+  background: url(http://i.imgur.com/JdsXRZB.jpg) 20% 68% no-repeat;
+  background-size: 113%;
+}
+.miraclemanHead {
+  background: url(http://i.imgur.com/QygfgzZ.jpg) 50% 38% no-repeat;
+  background-size: 100%;
+}
+.mmManPic1  {
+  
+  background: url(http://i.imgur.com/NqMz8Sf.jpg) 50% 20% no-repeat;
+  background-size: 100%;
+  width: 50%;
+  height: 300px;
+  float: left;
+  border-radius: 5px;
+
+}
+.mmManPic2  {
+
+  background: url(http://i.imgur.com/IFMoQPC.jpg) 70% 20% no-repeat;
+  background-size: 110%;
+  width: 50%;
+  height: 300px;
+  float: right;
+  border-radius: 5px;
+}
+.providenceHead {
+  background: url(http://i.imgur.com/ZzajWcw.jpg) 75% 43% no-repeat;
+  background-size: 113%;
+}
+.provPic1 {
+  width: 350px;
+}
+.supermanHead	{
+	background: url(https://i.imgur.com/X2xWWPI.jpg) 61% 94% no-repeat;
+  	background-size: 140%;
+}
+.supermanPic1	{
+	width: 100%;
+}
+.evaHead	{
+	background: url(https://i.imgur.com/ZPcKKo9.jpg) 50% 57% no-repeat;
+  	background-size: 100%;
+}
+.evaPic1	{
+	width: 100%;
+	/*background: url(https://i.imgur.com/Di2kuUW.jpg) 50% 50% no-repeat;
+  	background-size: 100%;*/
+}
+
+/*-----------------------PICTURES END----------------------*/
+
+/*-----------------------RESPONSIVE------------------------*/
+
+@media (max-width: 760px)	{
+
+	.title 	{
+		font-size: 50px;
+	}	
+
+	.article	{
+	/*background-color: pink;*/
+	/*margin-left: 15%;*/
+	margin-top: -20px;
+	/*width: 60%;*/
+	position: fixed;
+	overflow-y: auto;
+
+	}
+	ul {
+		width: 50%;
+		position: fixed;
+
+	}
+
+	li, .genre	{
+		font-size: 14px;
+	}
+/*	.holder	{
+		right: 30%;
+	}*/
+	.headPic	{
+		height: 250px;
+	}
+
+	.articleContents	{
+		padding-left: 10%;
+		width: 80%;
+	}
+
+}
+
+@media	(max-width: 433px)	{
+
+	.title 	{
+		font-size: 30px;
+	}
+
+	.article	{
+		font-size: 15px;
+		/*width: 70%;*/
+		/*right: 11%;*/
+	}
+	.articleContents	{
+		padding-left: 0;
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+/*-----------------------RESPONSIVE END--------------------*/
+
