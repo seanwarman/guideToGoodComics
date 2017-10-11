@@ -184,12 +184,12 @@ a 	{
 }
 .glyphicon {
   /*position: relative;*/
-  top: 0px;
+  top: 1px;
   display: inline-block;
   font-family: 'Glyphicons Halflings' !important;
   font-style: normal;
   font-weight: normal;
-  /*line-height: 1;*/
+  line-height: 2;
   background-color: #0099ff;
   color: white;
   font-size: 20px;
