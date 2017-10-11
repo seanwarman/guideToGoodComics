@@ -72,6 +72,7 @@ font-family: 'Gloria Hallelujah', cursive; <------menu
 	position: absolute;
 	height: 80%;
 	right: auto;
+	z-index: -1;
 
 
 
